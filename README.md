@@ -1,3 +1,5 @@
+# Slim 3 Controller
+
 Slim 3 ControllerThis package adds controller support to the Slim 3 framework. This can be particularly useful when building MVC applications using Slim and the native Slim Twig View extension.
 
 ### Installation:
@@ -55,3 +57,8 @@ $app->group('/contact', function() use ($app, $controllers) {
   $app->get('/', $controllers['contact']('index'));
   $app->post('/', $controllers['contact']('send'));
 });
+```
+
+### Acknowledgements
+
+Thanks to [@martynbiz](https://github.com/martynbiz/) for his awesome work on the original [Slim 3 Controller](https://github.com/martynbiz/slim3-controller).
